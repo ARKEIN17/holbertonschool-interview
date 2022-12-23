@@ -10,17 +10,17 @@
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	/* Declarate Variable that pointer to structure */
-	binary_tree_t *nodeNew;
-	/* Allocate Memory to nodeNew with a size as structure */
-	nodeNew = malloc(sizeof(binary_tree_t));
-	/* Validate is null */
-	if (nodeNew == NULL)
-		return (NULL);
-	/* add nodeNew  */
-	nodeNew->left = nodeNew->right = NULL;
-	nodeNew->n = value;
-	nodeNew->parent = parent;
-	/* Return nodenew on the tree */
-	return (nodeNew);
+        /* Declarate Variable that pointer to structure */
+        binary_tree_t *nodeNew;
+        /* Allocate Memory to nodeNew with a size as structure */
+        nodeNew = malloc(sizeof(binary_tree_t));
+        /* Validate is null */
+        if (nodeNew == NULL)
+                return (NULL);
+        /* add nodeNew  */
+        nodeNew->left = nodeNew->right = NULL;
+        nodeNew->n = value;
+        nodeNew->parent = parent;
+        /* Return nodenew on the tree */
+        return (nodeNew);
 }
